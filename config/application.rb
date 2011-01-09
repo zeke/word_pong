@@ -38,5 +38,11 @@ module WordPong
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    
+    # See https://github.com/mbleigh/haml-rails
+    config.generators do |g|
+      g.template_engine :haml
+    end
+
   end
 end

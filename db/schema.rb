@@ -10,6 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20110109045221) do
+
+  create_table "ping_pongs", :force => true do |t|
+    t.integer  "precedent_id"
+    t.string   "ping"
+    t.string   "pong"
+    t.string   "play_mode"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

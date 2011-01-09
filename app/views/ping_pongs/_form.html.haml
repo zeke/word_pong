@@ -1,0 +1,27 @@
+= form_for(@ping_pong) do |f|
+  - if @ping_pong.errors.any?
+    #errorExplanation
+      %h2= "#{pluralize(@ping_pong.errors.count, 'error')} prohibited this user from being saved:"
+      %ul
+      - @ping_pong.errors.full_messages.each do |msg|
+        %li= msg
+  
+  .field
+    = f.label :precedent_id
+    %br
+    = f.text_field :precedent_id
+  .field
+    = f.label :ping
+    %br
+    = f.text_field :ping
+  .field
+    = f.label :pong
+    %br
+    = f.text_field :pong
+  .field
+    = f.label :play_mode
+    %br
+    = f.text_field :play_mode
+
+  .actions
+    = f.submit

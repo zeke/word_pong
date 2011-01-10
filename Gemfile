@@ -8,6 +8,7 @@ gem 'jquery-rails', '>= 0.2.6'
 gem 'formtastic', '~> 1.2.2'
 gem 'httparty', '>= 0.6.1'
 gem 'common_view_helpers', '>= 0.3.1'
+gem 'wordnik-ruby', '>= 0.3.4'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
 group :development, :test do

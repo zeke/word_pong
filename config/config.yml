@@ -1,0 +1,14 @@
+javascripts:
+  - 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
+  - 'rails' # For UJS
+  - 'application' # This should be last
+
+api:
+  key: 'b39ee8d5f05d0f566a0080b4c310ceddf5dc5f7606a616f53'
+  base_path: 'http://beta.wordnik.com/api/'
+
+# synonym, antonym, form, hyponym, variant, verb-stem, verb-form, cross-reference, same-context  
+desirable_relation_types:
+  - 'antonym'
+  - 'same-context'
+  - 'synonym'

@@ -1,0 +1,4 @@
+page << "$('#ping_display').html('#{@related_words.first}');"
+page << "$('#ping').val('#{@related_words.first}');"
+page << "$('#pong').val('');"
+page << "$('#blacklist').val('#{@blacklist}');"

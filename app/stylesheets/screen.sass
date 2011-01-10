@@ -1,0 +1,56 @@
+@import "compass/reset"
+@import "compass/css3"
+@import "formtastic_defaults"
+
+$bg_color: #EFEBE3
+$text_color: #333
+$line_height: 1.5em
+$font_size: 2.8em
+
+body
+	background-color: $bg_color
+
+form
+	float: none
+	clear: both
+	input, div
+		display: block
+		float: left
+		margin: 0
+		padding: 0
+		width: auto
+
+#ping
+	display: none
+	
+#ping_display
+	margin: 0
+	padding: 0
+	color: $text_color
+	text-align: right
+	
+#divider
+	font-size: $font_size
+	margin: 0 15px
+	padding: 0
+	line-height: $line_height
+	color: mix($bg_color, $text_color)
+	
+#pong
+	color: #CC0000
+	background: none
+	outline: none
+	margin: 0
+	padding: 0
+	
+#ping_display, #pong
+	font-size: $font_size
+	border: none
+	// border-bottom: 1px dashed black
+	// border-bottom-color: darken($bg_color, 30)
+	width: 400px
+	line-height: $line_height
+	// text-align: center
+
+#submit
+	visibility: hidden

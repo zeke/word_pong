@@ -1,0 +1,12 @@
+= form_for @ping_pong, :remote => true, :html => {:id => 'form'} do |f|
+
+	#ping_display= @ping_pong.ping
+
+	#divider is the opposite of
+
+	= f.text_field :pong, :id => 'pong', :class => 'tk-ff-tisa-web-pro'
+	= f.hidden_field :ping, :id => 'ping'
+	= f.hidden_field :precedent_id
+
+	= hidden_field_tag :blacklist, @ping_pong.ping, :id => "blacklist"
+	= f.submit 'Next', :id => "submit"

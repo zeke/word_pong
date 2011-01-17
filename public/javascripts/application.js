@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$('#form').center();
+	$('#pong').focus();
 });
 
 $(window).resize(function() {

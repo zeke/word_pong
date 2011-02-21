@@ -1,6 +1,8 @@
 javascripts:
   - 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
   - 'rails' # For UJS
+  - 'jquery.ezCookie_0.7.01' # For subcookie magic. See http://code.google.com/p/ezcookie/
+  - 'configatron'
   - 'application' # This should be last
 
 api:
@@ -12,3 +14,11 @@ desirable_relation_types:
   - 'antonym'
   - 'same-context'
   - 'synonym'
+mode_keys:
+  - 'antonymy'
+  - 'synonymy'
+  - 'free_association'
+modes:
+  antonymy: "is the opposite of"
+  synonymy: "is another word for"
+  free_association: "makes me think of"

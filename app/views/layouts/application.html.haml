@@ -17,6 +17,13 @@
 	
 		#header
 			.container
+				
+				%h1#logo WordPong
+			
+				%ul.mode_select
+					%li Mode:
+					- configatron.mode_keys.each do |key|
+						%li= link_to_function "#{key.humanize.titlecase}", "Mode.set('#{key}')", :id => "#{key}_mode_select"
 							
 		#content
 			.container

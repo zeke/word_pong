@@ -1,14 +1,46 @@
-@import "compass/reset"
-@import "compass/css3"
-@import "formtastic_defaults"
-
-$bg_color: #EFEBE3
+$bg_color: #D6D2C9
+$header_bg_color: #005013
 $text_color: #333
+$pong_color: #CC0000
 $line_height: 1.5em
 $font_size: 2.8em
 
+@import "compass/reset"
+@import "compass/css3"
+@import "formtastic_defaults"
+@import "global"
+
 body
+	background: transparent image_url("paper.jpg") repeat
 	background-color: $bg_color
+	
+#header
+	background: transparent image_url("header_bg.jpg") repeat
+	
+	.container
+		//@include centered_container
+		@include no_float
+		padding: 15px
+		
+		h1
+			@include float_left
+			color: $bg_color
+		
+		ul.mode_select
+			@include horizontal_list
+			@include float_right
+			margin-right: 10px
+			li
+				font-size: .9em
+				color: mix($bg_color, $header_bg_color, 50%)
+				border-right-color: mix($bg_color, $header_bg_color, 30%)
+				&:first-child
+					border: none
+				a
+					@include underline_on_hover_only
+					color: mix($bg_color, $header_bg_color, 70%)
+					&:hover, &.active
+						color: $bg_color
 
 form
 	float: none
@@ -26,31 +58,32 @@ form
 #ping_display
 	margin: 0
 	padding: 0
-	color: $text_color
+	color: $header_bg_color
 	text-align: right
 	
-#divider
+#mode_display
 	font-size: $font_size
 	margin: 0 15px
 	padding: 0
 	line-height: $line_height
 	color: mix($bg_color, $text_color)
-	
+		
+#ping_display, #pong
+	font-size: $font_size
+	border: none
+	width: 400px
+	line-height: $line_height
+	// text-align: center
+
 #pong
-	color: #CC0000
+	color: $pong_color
 	background: none
 	outline: none
 	margin: 0
 	padding: 0
-	
-#ping_display, #pong
-	font-size: $font_size
-	border: none
-	// border-bottom: 1px dashed black
-	// border-bottom-color: darken($bg_color, 30)
-	width: 400px
-	line-height: $line_height
-	// text-align: center
+	border-bottom: 1px solid black
+	border-bottom-color: $pong_color
+
 
 #submit
 	visibility: hidden

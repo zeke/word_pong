@@ -1,4 +1,13 @@
 class PingPongsController < ApplicationController
+  
+  def index
+    @ping_pongs = PingPong.all
+    respond_to do |format|
+      format.html
+      format.xml { render :xml => @ping_pongs }
+      format.json { render :json => @ping_pongs }
+    end
+  end
 
   def create
     @ping_pong = PingPong.new(params[:ping_pong])
@@ -9,6 +18,7 @@ class PingPongsController < ApplicationController
     # Find the next ping
     wordnik # initialize the api
     pong = Wordnik::Word.find(@ping_pong.pong)
+    
     
     relatives = pong.related(:type => configatron.desirable_relation_types.join(','))
     
@@ -22,8 +32,8 @@ class PingPongsController < ApplicationController
       end
     end
     
-    # Added a default word just in case
-    @related_words << "juicy" if @related_words.empty?
+    # Add a random word just in case
+    @related_words << wordnik.random_word.wordstring if @related_words.empty?
     
     @blacklist = @blacklist.join(',')
     

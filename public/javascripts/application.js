@@ -2,7 +2,21 @@ $(document).ready(function(){
 	$('#form').center();
 	$('#pong').focus();
 	
-	Mode.set('antonymy');
+	// Default mode
+	Mode.set('free_association');
+	
+	// Don't submit the form if the response word has already been used.
+	$("#form").submit(function(e) {
+		var blacklist = $('#blacklist').val().split(',');
+		var pong = $('#pong').val();
+		if ($.inArray(pong, blacklist) > -1) {
+			alert("Hey, that word has already been used. Think harder!");
+			return false;
+		} else {
+			return true;
+		}
+	});
+	
 });
 
 $(window).resize(function() {
@@ -18,8 +32,6 @@ jQuery.fn.center = function () {
 
 Mode = {
 	set: function(mode) {
-		log(mode);
-		log(configatron('modes.' + mode));
 		$.setCookie('mode', mode); // store mode in a cookie
 		$('#mode_display').html(configatron('modes.' + mode)); // update mode label
 		$('#mode').val(mode); // update hidden form field

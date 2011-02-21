@@ -1,5 +1,5 @@
 WordPong::Application.routes.draw do
-  resources :ping_pongs, :only => [:create]
+  resources :ping_pongs, :only => [:index, :create]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

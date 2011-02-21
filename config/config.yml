@@ -17,8 +17,10 @@ desirable_relation_types:
 mode_keys:
   - 'antonymy'
   - 'synonymy'
+  - 'rhyme'
   - 'free_association'
 modes:
   antonymy: "is the opposite of"
   synonymy: "is another word for"
+  rhyme: "rhymes with"
   free_association: "makes me think of"

@@ -25,6 +25,8 @@ body
 		h1
 			@include float_left
 			color: $bg_color
+			em
+				color: mix($bg_color, $header_bg_color, 50%)
 		
 		ul.mode_select
 			@include horizontal_list
@@ -41,6 +43,7 @@ body
 					color: mix($bg_color, $header_bg_color, 70%)
 					&:hover, &.active
 						color: $bg_color
+						text-decoration: underline
 
 form
 	float: none

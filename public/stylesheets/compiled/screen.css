@@ -294,7 +294,11 @@ body {
   float: left;
   color: #d6d2c9;
 }
-/* line 29, ../../../app/stylesheets/screen.sass */
+/* line 28, ../../../app/stylesheets/screen.sass */
+#header .container h1 em {
+  color: #6b916e;
+}
+/* line 31, ../../../app/stylesheets/screen.sass */
 #header .container ul.mode_select {
   float: none;
   clear: both;
@@ -323,17 +327,17 @@ body {
   padding-right: 0;
   border-right: none;
 }
-/* line 33, ../../../app/stylesheets/screen.sass */
+/* line 35, ../../../app/stylesheets/screen.sass */
 #header .container ul.mode_select li {
   font-size: 0.9em;
   color: #6b916e;
   border-right-color: #407749;
 }
-/* line 37, ../../../app/stylesheets/screen.sass */
+/* line 39, ../../../app/stylesheets/screen.sass */
 #header .container ul.mode_select li:first-child {
   border: none;
 }
-/* line 39, ../../../app/stylesheets/screen.sass */
+/* line 41, ../../../app/stylesheets/screen.sass */
 #header .container ul.mode_select li a {
   text-decoration: none;
   color: #95ab92;
@@ -342,17 +346,18 @@ body {
 #header .container ul.mode_select li a:hover {
   text-decoration: underline;
 }
-/* line 42, ../../../app/stylesheets/screen.sass */
+/* line 44, ../../../app/stylesheets/screen.sass */
 #header .container ul.mode_select li a:hover, #header .container ul.mode_select li a.active {
   color: #d6d2c9;
+  text-decoration: underline;
 }
 
-/* line 45, ../../../app/stylesheets/screen.sass */
+/* line 48, ../../../app/stylesheets/screen.sass */
 form {
   float: none;
   clear: both;
 }
-/* line 48, ../../../app/stylesheets/screen.sass */
+/* line 51, ../../../app/stylesheets/screen.sass */
 form input, form div {
   display: block;
   float: left;
@@ -361,12 +366,12 @@ form input, form div {
   width: auto;
 }
 
-/* line 55, ../../../app/stylesheets/screen.sass */
+/* line 58, ../../../app/stylesheets/screen.sass */
 #ping {
   display: none;
 }
 
-/* line 58, ../../../app/stylesheets/screen.sass */
+/* line 61, ../../../app/stylesheets/screen.sass */
 #ping_display {
   margin: 0;
   padding: 0;
@@ -374,7 +379,7 @@ form input, form div {
   text-align: right;
 }
 
-/* line 64, ../../../app/stylesheets/screen.sass */
+/* line 67, ../../../app/stylesheets/screen.sass */
 #mode_display {
   font-size: 2.8em;
   margin: 0 15px;
@@ -383,7 +388,7 @@ form input, form div {
   color: #84827e;
 }
 
-/* line 71, ../../../app/stylesheets/screen.sass */
+/* line 74, ../../../app/stylesheets/screen.sass */
 #ping_display, #pong {
   font-size: 2.8em;
   border: none;
@@ -391,7 +396,7 @@ form input, form div {
   line-height: 1.5em;
 }
 
-/* line 78, ../../../app/stylesheets/screen.sass */
+/* line 81, ../../../app/stylesheets/screen.sass */
 #pong {
   color: #cc0000;
   background: none;
@@ -402,7 +407,7 @@ form input, form div {
   border-bottom-color: #cc0000;
 }
 
-/* line 88, ../../../app/stylesheets/screen.sass */
+/* line 91, ../../../app/stylesheets/screen.sass */
 #submit {
   visibility: hidden;
 }

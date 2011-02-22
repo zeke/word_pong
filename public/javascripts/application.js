@@ -36,6 +36,7 @@ Mode = {
 		$('#mode').val(mode); // update hidden form field
 		$('ul.mode_select li a').removeClass('active'); // remove active style from all mode-switching links
 		$('a#' + mode + '_mode_select').addClass('active'); // style the active mode-switching link
+		$('#form').center(); // Center form to account for change in labels
 	}
 };
 

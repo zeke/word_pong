@@ -381,7 +381,7 @@ form input, form div {
 
 /* line 68, ../../../app/stylesheets/screen.sass */
 #mode_display {
-  font-size: 2.6em;
+  font-size: 2.5em;
   margin: 0 15px;
   padding: 0;
   line-height: 1.5em;
@@ -390,21 +390,21 @@ form input, form div {
 
 /* line 75, ../../../app/stylesheets/screen.sass */
 #ping_display, #pong {
-  font-size: 2.6em;
+  font-size: 2.5em;
   border: none;
-  width: 340px;
+  width: 300px;
   line-height: 1.5em;
 }
 
 /* line 82, ../../../app/stylesheets/screen.sass */
 #pong {
-  color: #cc0000;
+  color: #990000;
   background: none;
   outline: none;
   margin: 0;
   padding: 0;
   border-bottom: 1px solid black;
-  border-bottom-color: #cc0000;
+  border-bottom-color: #990000;
 }
 
 /* line 92, ../../../app/stylesheets/screen.sass */

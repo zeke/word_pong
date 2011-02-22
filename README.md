@@ -15,3 +15,12 @@ To Do
 * Add a "Gimme a hint" option
 * update layout centering when switching play modes
 * Store the blacklist in a cookie (maybe ezcookie supports arrays?), not a param.
+
+
+http://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&includePartOfSpeech=adjective&minCorpusCount=10000
+
+r = Wordnik::Request.new(:get, "word/{word}/related", :params => {:word => "old", :partOfSpeech => "adjective", :type => "antonym"})
+
+http://api.wordnik.com/v4/word.json/old/related?partOfSpeech=adjective&
+
+http://api.wordnik.com/v4/word.json/old/related?partOfSpeech=adjective&type=synonym

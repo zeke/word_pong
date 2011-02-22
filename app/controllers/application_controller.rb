@@ -13,5 +13,5 @@ class ApplicationController < ActionController::Base
   # def blacklisted?(word)
   #   cookies[:blacklist].present? && cookies[:blacklist].split(",").include?(word)
   # end
-  
+
 end

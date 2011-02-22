@@ -4,13 +4,13 @@ describe "ping_pongs/index.html.haml" do
   before(:each) do
     assign(:ping_pongs, [
       stub_model(PingPong,
-        :precedent_id => 1,
+        :serve_id => 1,
         :ping => "Ping",
         :pong => "Pong",
         :play_mode => "Play Mode"
       ),
       stub_model(PingPong,
-        :precedent_id => 1,
+        :serve_id => 1,
         :ping => "Ping",
         :pong => "Pong",
         :play_mode => "Play Mode"

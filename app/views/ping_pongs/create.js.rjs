@@ -2,4 +2,8 @@ page << "$('#ping_display').html('#{@related_words.first}');"
 page << "$('#ping').val('#{@related_words.first}');"
 page << "$('#pong').val('');"
 page << "$('#blacklist').val('#{@blacklist}');"
-page << "$('#ping_pong_precedent_id').val('#{@ping_pong.id}');"
+
+# Plant the serve's ID into the form..
+if @ping_pong.serve?
+  page << "$('#ping_pong_serve_id').val('#{@ping_pong.id}');"
+end

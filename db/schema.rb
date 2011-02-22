@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110220234709) do
+ActiveRecord::Schema.define(:version => 20110222034608) do
 
   create_table "ping_pongs", :force => true do |t|
     t.integer  "precedent_id"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20110220234709) do
     t.string   "mode"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "serve_id"
   end
 
 end

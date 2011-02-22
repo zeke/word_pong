@@ -3,12 +3,12 @@
 	#ping_display= @ping_pong.ping
 	= f.hidden_field :ping, :id => 'ping'
 	
-	#mode_display --placeholder text--
+	#mode_display ???
 	= f.hidden_field :mode, :id => 'mode'
 	
 	= f.text_field :pong, :id => 'pong', :class => 'tk-ff-tisa-web-pro'
 
-	= f.hidden_field :precedent_id
+	= f.hidden_field :serve_id
 	= hidden_field_tag :blacklist, @ping_pong.ping, :id => "blacklist"
 	
 	= f.submit 'Next', :id => "submit"

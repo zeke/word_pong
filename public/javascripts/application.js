@@ -1,9 +1,8 @@
 $(document).ready(function(){
+	
+	Mode.set('free_association');
 	$('#form').center();
 	$('#pong').focus();
-	
-	// Default mode
-	Mode.set('free_association');
 	
 	// Don't submit the form if the response word has already been used.
 	$("#form").submit(function(e) {

@@ -10,10 +10,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110222034608) do
+ActiveRecord::Schema.define(:version => 20110222052038) do
 
   create_table "ping_pongs", :force => true do |t|
-    t.integer  "precedent_id"
     t.string   "ping"
     t.string   "pong"
     t.string   "mode"
@@ -21,5 +20,10 @@ ActiveRecord::Schema.define(:version => 20110222034608) do
     t.datetime "updated_at"
     t.integer  "serve_id"
   end
+
+  add_index "ping_pongs", ["mode"], :name => "index_ping_pongs_on_mode"
+  add_index "ping_pongs", ["ping"], :name => "index_ping_pongs_on_ping"
+  add_index "ping_pongs", ["pong"], :name => "index_ping_pongs_on_pong"
+  add_index "ping_pongs", ["serve_id"], :name => "index_ping_pongs_on_serve_id"
 
 end

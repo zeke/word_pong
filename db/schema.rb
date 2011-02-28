@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110222052038) do
+ActiveRecord::Schema.define(:version => 20110223071444) do
 
   create_table "ping_pongs", :force => true do |t|
     t.string   "ping"
@@ -25,5 +25,15 @@ ActiveRecord::Schema.define(:version => 20110222052038) do
   add_index "ping_pongs", ["ping"], :name => "index_ping_pongs_on_ping"
   add_index "ping_pongs", ["pong"], :name => "index_ping_pongs_on_pong"
   add_index "ping_pongs", ["serve_id"], :name => "index_ping_pongs_on_serve_id"
+
+  create_table "pronunciations", :force => true do |t|
+    t.string   "word"
+    t.string   "transcription"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pronunciations", ["transcription"], :name => "index_pronunciations_on_transcription"
+  add_index "pronunciations", ["word"], :name => "index_pronunciations_on_word"
 
 end

@@ -13,6 +13,7 @@ class StaticController < ApplicationController
 
     # Filter out lame or capitalized words..
     @words = @words.select {|word| !word.starts_with? "un" }
+    @words = @words.select {|word| !word.starts_with? "non" }
     @words = @words.select {|word| !word.ends_with? "ed" }
     @words = @words.select {|word| !word.ends_with? "ing" }
     @words = @words.select {|word| word.downcase == word }

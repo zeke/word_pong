@@ -13,6 +13,7 @@ api:
 desirable_relation_types:
   - 'antonym'
   - 'same-context'
+  - 'equivalent'
   - 'synonym'
 mode_keys:
   - 'antonymy'

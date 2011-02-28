@@ -8,6 +8,7 @@ Go play at [wordpong.heroku.com](http://wordpong.heroku.com)
 To Do
 -----
 
+* Params string can get too long if used for the blacklist
 * When resorting to a random word response, ensure the random word is an adjective
 * Keep Pings within a certain level of accessibility (corpus frequency)
 * Add an "I Don't Know" option
@@ -15,6 +16,7 @@ To Do
 * Add a "Gimme a hint" option
 * update layout centering when switching play modes
 * Store the blacklist in a cookie (maybe ezcookie supports arrays?), not a param.
+
 
 
 http://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&includePartOfSpeech=adjective&minCorpusCount=10000

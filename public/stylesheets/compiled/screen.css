@@ -272,13 +272,13 @@ form.formtastic fieldset > ol > li.date fieldset ol li label input, form.formtas
 
 /* line 14, ../../../app/stylesheets/screen.sass */
 body {
-  background: transparent url('/images/paper.jpg?1298345608') repeat;
+  background: transparent url('/images/paper.jpg?1298246679') repeat;
   background-color: #d6d2c9;
 }
 
 /* line 18, ../../../app/stylesheets/screen.sass */
 #header {
-  background: transparent url('/images/header_bg.jpg?1298345608') repeat;
+  background: transparent url('/images/header_bg.jpg?1298873762') repeat;
 }
 /* line 21, ../../../app/stylesheets/screen.sass */
 #header .container {
@@ -296,9 +296,10 @@ body {
 }
 /* line 29, ../../../app/stylesheets/screen.sass */
 #header .container h1 em {
-  color: #6b916e;
+  color: #6c8c9a;
+  font-size: 0.9em;
 }
-/* line 32, ../../../app/stylesheets/screen.sass */
+/* line 33, ../../../app/stylesheets/screen.sass */
 #header .container ul.mode_select {
   float: none;
   clear: both;
@@ -327,37 +328,37 @@ body {
   padding-right: 0;
   border-right: none;
 }
-/* line 36, ../../../app/stylesheets/screen.sass */
+/* line 37, ../../../app/stylesheets/screen.sass */
 #header .container ul.mode_select li {
   font-size: 0.9em;
-  color: #6b916e;
-  border-right-color: #407749;
+  color: #6c8c9a;
+  border-right-color: #417087;
 }
-/* line 40, ../../../app/stylesheets/screen.sass */
+/* line 41, ../../../app/stylesheets/screen.sass */
 #header .container ul.mode_select li:first-child {
   border: none;
 }
-/* line 42, ../../../app/stylesheets/screen.sass */
+/* line 43, ../../../app/stylesheets/screen.sass */
 #header .container ul.mode_select li a {
   text-decoration: none;
-  color: #95ab92;
+  color: #96a8ac;
 }
 /* line 27, ../../../app/stylesheets/_global.sass */
 #header .container ul.mode_select li a:hover {
   text-decoration: underline;
 }
-/* line 45, ../../../app/stylesheets/screen.sass */
+/* line 46, ../../../app/stylesheets/screen.sass */
 #header .container ul.mode_select li a:hover, #header .container ul.mode_select li a.active {
   color: #d6d2c9;
   text-decoration: underline;
 }
 
-/* line 49, ../../../app/stylesheets/screen.sass */
+/* line 50, ../../../app/stylesheets/screen.sass */
 form {
   float: none;
   clear: both;
 }
-/* line 52, ../../../app/stylesheets/screen.sass */
+/* line 53, ../../../app/stylesheets/screen.sass */
 form input, form div {
   display: block;
   float: left;
@@ -366,20 +367,20 @@ form input, form div {
   width: auto;
 }
 
-/* line 59, ../../../app/stylesheets/screen.sass */
+/* line 60, ../../../app/stylesheets/screen.sass */
 #ping {
   display: none;
 }
 
-/* line 62, ../../../app/stylesheets/screen.sass */
+/* line 63, ../../../app/stylesheets/screen.sass */
 #ping_display {
   margin: 0;
   padding: 0;
-  color: #005013;
+  color: #02476b;
   text-align: right;
 }
 
-/* line 68, ../../../app/stylesheets/screen.sass */
+/* line 69, ../../../app/stylesheets/screen.sass */
 #mode_display {
   font-size: 2.5em;
   margin: 0 15px;
@@ -388,7 +389,7 @@ form input, form div {
   color: #84827e;
 }
 
-/* line 75, ../../../app/stylesheets/screen.sass */
+/* line 76, ../../../app/stylesheets/screen.sass */
 #ping_display, #pong {
   font-size: 2.5em;
   border: none;
@@ -396,7 +397,7 @@ form input, form div {
   line-height: 1.5em;
 }
 
-/* line 82, ../../../app/stylesheets/screen.sass */
+/* line 83, ../../../app/stylesheets/screen.sass */
 #pong {
   color: #990000;
   background: none;
@@ -407,7 +408,7 @@ form input, form div {
   border-bottom-color: #990000;
 }
 
-/* line 92, ../../../app/stylesheets/screen.sass */
+/* line 93, ../../../app/stylesheets/screen.sass */
 #submit {
   visibility: hidden;
 }

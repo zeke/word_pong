@@ -3,12 +3,11 @@ development:
   database: word_pong_development
   username: root
   encoding: utf8
+  password: 4Bcd3fg
 
 test:
   adapter: mysql2
   database: word_pong_test
   username: root
   encoding: utf8
-
-cucumber:
-  <<: *test
+  password: 4Bcd3fg
